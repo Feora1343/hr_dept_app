@@ -28,3 +28,19 @@ router.get('/', (request,response) => {
         }
     })
 });
+
+router.post('/', (request, response) =>{
+    let newEmployee = new Employee(request.body);
+    console.log('Employee to save is', request.body);
+    newEmployee.save((error, savedEmployee)=> {
+        if (error){
+            console.log('Error on add Employee', error);
+            response.sendStatus(500);
+        }
+        else {
+            response.sendStatus(201);
+        }
+    })
+});
+
+module.exports = router;
