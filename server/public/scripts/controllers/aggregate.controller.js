@@ -5,10 +5,20 @@ app.controller('AggregateController', ['AggregateService', function(AggregateSer
     self.getEmployees = AggregateService.getEmployees;
     self.employees = AggregateService.employees;
 
-    AggregateService.getEmployees();
     
-
+    
     //calculate average, max and min salary
+    //get employeeList:
+    // self.employeeList = self.employees.employeeList
+    // console.log('employeeList in controller', employeeList);
+    
+    //employees.employeeList.salary
+
     //calculate number of employees
+
+
     //list every job title and the names of employees that have that title
-}])
+
+    //self.getEmployees(); //ADD BACK WHEN ALL IS MERGED!
+    
+}]);
