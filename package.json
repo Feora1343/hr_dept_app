@@ -1,0 +1,27 @@
+{
+  "name": "HR-Dept-Group-Project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heimlouis/HR-Dept-Group-Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/heimlouis/HR-Dept-Group-Project/issues"
+  },
+  "homepage": "https://github.com/heimlouis/HR-Dept-Group-Project#readme",
+  "dependencies": {
+    "angular": "^1.6.9",
+    "angular-route": "^1.6.9",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2"
+  }
+}
