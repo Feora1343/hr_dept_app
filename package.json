@@ -16,6 +16,7 @@
   },
   "devDependencies": {},
   "scripts": {
+    "start": "node server/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -29,4 +30,5 @@
     "url": "https://github.com/heimlouis/HR-Dept-Group-Project/issues"
   },
   "homepage": "https://github.com/heimlouis/HR-Dept-Group-Project#readme"
+  }
 }
