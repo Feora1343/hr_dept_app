@@ -43,4 +43,39 @@ router.post('/', (request, response) =>{
     })
 });
 
+router.put('/:id', (request, response)=>{
+    let id = request.params.id;
+    let employeeToUpdate = request.body;
+    Employee.findByIdAndUpdate(
+        {"_id": id},
+        {$set: employeeToUpdate},
+        (error, updatedEmployee) => {
+            if (error){
+                console.log('Error on update Employee:', error);
+                response.sendStatus(500);
+            }
+            else {
+                response.sendStatus(200);
+            }
+        }
+    )
+})
+
+router.delete('/delete/:id', (request, resposne)=>{
+    let id = request.params.id;
+    console.log('Employee to delete is', request.body);
+    Employee.findByIdAndRemove(
+        {"_id": id},
+        (error, deleteEmployee) =>{
+            if (error){
+                console.log('Error on delete Employee', error);
+                response.sendStatus(500);
+            }
+            else {
+                response.sendStatus(200);
+            }
+        }
+    )
+});
+
 module.exports = router;
