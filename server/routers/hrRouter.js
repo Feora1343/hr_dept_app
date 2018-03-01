@@ -13,4 +13,6 @@ const EmployeeSchema = new mongoose.Schema(
         hire_date: { type: Date, default: new Date()},
 
     }
-)
+);
+
+const Employee = mongoose.model('Employee', EmployeeSchema, 'employees');
