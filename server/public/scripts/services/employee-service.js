@@ -25,6 +25,33 @@ myApp.service('EmployeeService', ['$http', function($http) {
         .catch(function(response) {
             console.log('Error POSTing new employee!');
         })
-        // self.getEmployee();
     }
+    //start last changed 03/02/2018 3:40
+    self.updateEmployee = function(employee) {
+        console.log('Inside Update Employee Function!');
+        
+        $http.put(`/employees/${employee._id}`, employee)
+        .then(function (response) {
+            console.log('Successfully Updated Employee!: ', response);
+            self.getEmployee();  
+        })
+        .catch(function (response) {
+            console.log('Error On Updating Employee! :', response);
+        })
+    }
+
+    self.deleteEmployee = function(employee_id) {
+        console.log('Inside Delete Employee Function!');
+
+        $http.delete(`employees/delete/${employee_id}`)
+        .then(function (response) {
+            console.log('Successfully Deleted Employee!: ', response);
+            self.getEmployee();  
+        })
+        .catch(function (response) {
+            console.log('Error On Deleting Employee!:', response);
+        })
+    }
+    //end last changed 03/02/2018 3:40
+    //self.getEmployee();
 }])

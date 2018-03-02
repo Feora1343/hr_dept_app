@@ -1,24 +1,35 @@
-<h1>All Employees</h1>
-
 <table>
-    <thread>
-        <th>Name</th>
-        <th>Employee Number</th>
+    <thead>
+        <th>Full Name</th>
+        <th>Employee ID</th>
         <th>Salary</th>
-        <th>Title</th>
+        <th>Job Title</th>
         <th>Hire Date</th>
-        <th></th>
-        <th></th>
-    </thread>
-        <tbody>
-            <tr ng-repeat="employee in employeeList">
-                <td>{{employee.name}}</td>
-                <td>{{employee.employee_number}}</td>
-                <td>{{employee.salary}}</td>
-                <td>{{employee.title}}</td>
-                <td>{{employee.hire_date}}</td>
-                <td><button>Update</button></td>
-                <td><button>Delete</button></td>
-            </tr>
-        </tbody>
+        <th>Update</th>
+        <th>Delete</th>
+    </thead>
+    <tbody>
+        <tr ng-repeat="employee in te.employee.list">
+            <td>{{employee.name}}</td>
+            <td>{{employee.employee_number}}</td>
+            <td>{{employee.salary}}</td>
+            <td>{{employee.title}}</td>
+            <td>{{employee.hire_date | date: 'mn/dd/yyyy'}}</td>
+            <td><md-button class="md-primary" ng-click="te.openFormUpdateEmployee(employee)">Update</md-button></td>
+            <td><md-button class="md-primary" ng-click="te.deleteEmployee(employee._id)">Delete</md-button></td>
+        </tr>
+    </tbody>
 </table>
+<md-content layout-gt-sm="row">
+    <md-input-container>
+        <label>Full Name</label>
+        <input type="text" ng-value="{{employee.name}}" ng-model="te.employeeInfo.name">
+    </md-input-container>   
+    <md-input-container>
+        <label>Job Title</label>
+        <input type="text" ng-value="{{employee.title}}" ng-model="te.employeeInfo.title">
+    </md-input-container>
+</md-content>
+<md-content layout-gt-sm="row">
+    <md-button ng-click="te.updateEmployee(te.employeeInfo)" type="submit">Submit</md-button>
+</md-content>

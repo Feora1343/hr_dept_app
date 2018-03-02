@@ -18,6 +18,9 @@ myApp.config(function($routeProvider) {
         }).when('/', {
             templateUrl: 'views/getEmployees.html',
             controller: 'EmployeesController as ec'
+        }).when('/trackEmployee', {
+            templateUrl: '/views/trackEmployee.html',
+            controller: 'TrackEmployeeController as te'
         }).otherwise({ redirectTo: '/'
     })
 })
