@@ -1,0 +1,16 @@
+.navBardemoBasicUsage md-content .ext-content {
+    padding: 50px;
+    margin: 20px;
+}
+
+.md-card-image {
+    width: 200px;
+}
+
+.student {
+    text-align: center;
+}
+
+.md-padding {
+    flex-wrap:wrap;
+}

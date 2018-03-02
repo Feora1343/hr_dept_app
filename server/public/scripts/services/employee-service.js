@@ -4,6 +4,8 @@ myApp.service('EmployeeService', ['$http', function($http) {
     self.employee = {list: []};
 
     self.addEmployee = function(employee) {
+        console.log('Inside Add Employee Function!');
+        
         $http.post('/employee', employee)
         .then(function(response) {
             self.getEmployee();
