@@ -69,7 +69,7 @@ router.put('/:id', (request, response)=>{
     )
 })
 
-router.delete('/delete/:id', (request, resposne)=>{
+router.delete('/delete/:id', (request, response)=>{
     let id = request.params.id;
     console.log('Employee to delete is', request.body);
     Employee.findByIdAndRemove(
