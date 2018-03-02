@@ -10,10 +10,14 @@ myApp.config(function($routeProvider) {
         .when('/addEmployee', {
             templateUrl: '/views/addEmployee.html',
             controller: 'AddEmployeeController as ae'
-        })
-        .when('/about', {
+        }).when('/aggregate', {
+            templateUrl: 'views/aggregate.html',
+            controller: 'AggregateController as ac'
+        }).when('/about', {
             templateUrl: '/views/about.html'
-        })
-        .otherwise({ redirectTo: '/'
+        }).when('/', {
+            templateUrl: 'views/getEmployees.html',
+            controller: 'EmployeesController as ec'
+        }).otherwise({ redirectTo: '/'
     })
 })

@@ -4,9 +4,11 @@ myApp.service('EmployeeService', ['$http', function($http) {
     self.employee = {list: []};
 
     self.getEmployee = function() {
-        $http.get('/employee')
+        $http.get('/employees')
         .then(function(response){
             self.employee.list = response.data;
+            console.log('in Employee-Service GET', self.employee.list);
+            
         })
         .catch(function(response){
             console.log('Error GETing employees!');
@@ -16,13 +18,13 @@ myApp.service('EmployeeService', ['$http', function($http) {
     self.addEmployee = function(employee) {
         console.log('Inside Add Employee Function!');
         
-        $http.post('/employee', employee)
+        $http.post('/employees', employee)
         .then(function(response) {
             self.getEmployee();
         })
         .catch(function(response) {
             console.log('Error POSTing new employee!');
         })
-        self.getEmployee();
+        // self.getEmployee();
     }
 }])

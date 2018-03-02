@@ -1,9 +1,9 @@
-app.controller('AggregateController', ['AggregateService', function(AggregateService){
+myApp.controller('AggregateController', ['AggregateService', function(AggregateService){
     let self = this;
-
-    self.getEmployees = AggregateService.getEmployees;
     self.employees = AggregateService.employees;
-
+    self.getEmployees = AggregateService.getEmployees;
+    self.getEmployees(); //ADD BACK WHEN ALL IS MERGED!
+    console.log('in controller', self.employees);
     console.log('in controller', self.employees.employeeList);
 
     self.salaryAverage = 0;
@@ -44,6 +44,6 @@ app.controller('AggregateController', ['AggregateService', function(AggregateSer
     }
     console.log('employee job object:', self.personInJobsObject);
     
-    //self.getEmployees(); //ADD BACK WHEN ALL IS MERGED!
+   
     
 }]);
