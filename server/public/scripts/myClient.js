@@ -3,7 +3,7 @@ const app = angular.module('myApp', ['ngRoute']); // <- Pass in angular-route mo
 app.config(function($routeProvider){
   $routeProvider.when('/', {
     templateUrl: 'views/getEmployees.html',
-    controller: 'CarController as cc'
+    controller: 'EmployeesController as ec'
   }).when('/aggregate', {
     templateUrl: 'views/aggregate.html',
     controller: 'AggregateController as ac'
