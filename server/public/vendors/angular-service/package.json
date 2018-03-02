@@ -1,0 +1,55 @@
+{
+  "_from": "angular-service",
+  "_id": "angular-service@3.1.1",
+  "_inBundle": false,
+  "_integrity": "sha512-c6pMtEuKmJtsp72nEmqwGL5tYzRr/vejwMfsWkhDHtl6fdbxLmdh0WKaSA1q/XaNgjP3TmQDNufx8p7kobYxrw==",
+  "_location": "/angular-service",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "angular-service",
+    "name": "angular-service",
+    "escapedName": "angular-service",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/angular-service/-/angular-service-3.1.1.tgz",
+  "_shasum": "5d1a54e69fddf6238b55c8983ec8596b0915ec3e",
+  "_spec": "angular-service",
+  "_where": "/Users/feeora/Github/In Class Assignments/HR-Dept-Group-Project",
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/Jeff-Tian/angular-service/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "Wrap $http to handle service's 200 OK error response.",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-print": "^2.0.1",
+    "gulp-uglify": "^3.0.0",
+    "run-sequence": "^2.2.1"
+  },
+  "homepage": "https://github.com/Jeff-Tian/angular-service#readme",
+  "license": "ISC",
+  "main": "dist/scripts/all.min.js",
+  "name": "angular-service",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jeff-Tian/angular-service.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "3.1.1"
+}

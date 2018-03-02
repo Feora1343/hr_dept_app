@@ -1,7 +1,5 @@
-app.controller('AggregateController', ['AggregateService', function(AggregateService){
+myApp.controller('AggregateController', ['AggregateService', function(AggregateService){
     let self = this;
-
-    self.getEmployees = AggregateService.getEmployees;
     self.employees = AggregateService.employees;
     self.aggregateAllData = AggregateService.aggregateAllData;
     console.log('in controller', self.employees.employeeList);
@@ -9,6 +7,5 @@ app.controller('AggregateController', ['AggregateService', function(AggregateSer
     self.minSalary = AggregateService.minSalary;
     self.maxSalary = AggregateService.maxSalary;
     self.salaryAverage = AggregateService.salaryAverage;
-    self.personInJobsObject = AggregateService.personInJobsObject;
-    
+    self.personInJobsObject = AggregateService.personInJobsObject;    
 }]);

@@ -1,0 +1,40 @@
+<div layout="column" layout-align="center center" class"mid-inline-form">
+    <h1>Add Employee</h1>
+    <form>
+        <md-content layout-padding class="addEmployee">
+            <div>
+                <md-input-container>
+                    <label for="Full Name">Full Name</label>
+                    <input type="text" ng-model="ae.newEmployee.name">
+                </md-input-container>
+            </div>
+        </md-content>
+
+        <md-content layout-padding class="addEmployee">
+            <div>
+                <md-input-container>
+                    <label for="Employee ID">Employee ID</label>
+                    <input type="number" ng-model="ae.newEmployee.employee_number">
+                </md-input-container>
+                <md-input-container>
+                    <label for="Job Title">Job Title</label>
+                    <input type="text" ng-model="ae.newEmployee.title">
+                </md-input-container>
+            </div>
+        </md-content>
+        <md-content layout-padding class="addEmployee">
+                <div>
+                    <md-input-container>
+                    <md-datepicker ng-model="ae.newEmployee.hire_date" md-placeholder="Hire Date"></md-datepicker>
+                    </md-input-container>
+                    <md-input-container>
+                        <label for="Salary">Salary</label>
+                        <input type="number" ng-model="ae.newEmployee.salary">
+                    </md-input-container>
+                </div>
+            </md-content>
+            <div class="btn-container">
+                    <md-button ng-click="ae.addEmployee(ae.newEmployee)" class="md-raised md-primary">Submit</md-button>
+            </div>
+    </form>
+</div>

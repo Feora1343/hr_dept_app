@@ -32,6 +32,7 @@ router.get('/', (request,response) => {
             response.sendStatus(500);
         }
         else {
+            console.log('in get router');
             response.send(foundEmployees);
         }
     })
