@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "angular": "^1.6.9",
+    "angular-animate": "^1.6.9",
     "angular-aria": "^1.6.9",
     "angular-material": "^1.1.7",
     "angular-messages": "^1.6.9",
@@ -30,5 +31,4 @@
     "url": "https://github.com/heimlouis/HR-Dept-Group-Project/issues"
   },
   "homepage": "https://github.com/heimlouis/HR-Dept-Group-Project#readme"
-  }
 }
