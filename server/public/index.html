@@ -1,24 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HR Group Project</title>
-    <script src="vendors/angular.js"></script>
-    <script src="vendors/angular-route.js"></script>
-    <script src="scripts/myClient.js"></script>
-    <script src="scripts/services/aggregate.service.js"></script>
-    <script src="scripts/controllers/aggregate.controller.js"></script>
-    <link rel="stylesheet" href="vendors/bootstrap.css">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HR Dept Application</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Again, blantaly stealing this form Ally's example. -->
+    <!-- Angular -->
+    <script src="vendors/angular/angular.min.js" charset="utf-8"></script>
+    <script src="vendors/angular-route/angular-route.min.js" charset="utf-8"></script>
+
+    <!-- Angular Material -->
+    <link href="vendors/angular-material/angular-material.min.css" rel="stylesheet" type="text/css">
+    <script src="vendors/angular-animate/angular-animate.min.js" charset="utf-8"></script>
+    <script src="vendors/angular-aria/angular-aria.min.js" charset="utf-8"></script>
+    <script src="vendors/angular-messages/angular-messages.min.js" charset="utf-8"></script>
+    <script src="vendors/angular-material/angular-material.min.js" charset="utf-8"></script>
+
+    <!-- Client -->
+    <script src="scripts/client.js"></script>
+    <script src="scripts/controllers/addEmployee-controller.js"></script>
+    <script src="scripts/services/employee-service.js"></script>
+<!--  <script src="scripts/myClient.js"></script>
+      <script src="scripts/services/aggregate.service.js"></script>
+      <script src="scripts/controllers/aggregate.controller.js"></script> -->
+
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body ng-app="myApp">
-    <header><h1>Aggregate Data</h1></header>
-  <nav>
-    <a href="/#!aggregate">Aggregate Data</a>
-  </nav>
-  <main ng-view>
+    <nav ng-include="'/views/nav.html'"></nav>
+    <main ng-view>
 
-  </main>
+    </main>
+
 </body>
 </html>
