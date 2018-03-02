@@ -1,0 +1,14 @@
+<h2>Aggregate Data</h2>
+
+<p>Total Number of Employees: {{ac.numOfEmployees}}</p>
+<p>Minimum Salary: {{ac.minSalary}}</p>
+<p>Maximum Salary: {{ac.maxSalary}}</p>
+<p>Salary Average: {{ac.salaryAverage}}</p>
+
+<ul ng-repeat="(key,value) in ac.personInJobsObject">
+    <li>{{key}}</li>
+    <ul ng-repeat="person in value">
+        <li>{{person}}</li>
+    </ul>
+
+</ul>
