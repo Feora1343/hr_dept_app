@@ -17,14 +17,6 @@ const EmployeeSchema = new mongoose.Schema(
 
 const Employee = mongoose.model('Employee', EmployeeSchema, 'employees');
 
-// let employee1 = new Employee({
-//     name: 'Jan',
-//     employee_number: '1',
-//     salary: 10000,
-//     title: 'accountant',
-//     hire_date: '2017-01-01'
-// })
-
 router.get('/', (request,response) => {
     Employee.find({}, (error, foundEmployees)=>{
         if (error){

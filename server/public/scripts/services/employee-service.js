@@ -7,8 +7,6 @@ myApp.service('EmployeeService', ['$http', function($http) {
         $http.get('/employees')
         .then(function(response){
             self.employee.list = response.data;
-            console.log('in Employee-Service GET', self.employee.list);
-            
         })
         .catch(function(response){
             console.log('Error GETing employees!');
@@ -52,6 +50,5 @@ myApp.service('EmployeeService', ['$http', function($http) {
             console.log('Error On Deleting Employee!:', response);
         })
     }
-    //end last changed 03/02/2018 3:40
-    //self.getEmployee();
+    self.getEmployee();
 }])
