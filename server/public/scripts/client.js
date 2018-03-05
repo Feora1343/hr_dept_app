@@ -10,15 +10,19 @@ myApp.config(function($routeProvider) {
         .when('/addEmployee', {
             templateUrl: '/views/addEmployee.html',
             controller: 'AddEmployeeController as ae'
-        }).when('/aggregate', {
+        })
+        .when('/aggregate', {
             templateUrl: 'views/aggregate.html',
             controller: 'AggregateController as ac'
-        }).when('/about', {
+        })
+        .when('/about', {
             templateUrl: '/views/about.html'
-        }).when('/', {
-            templateUrl: 'views/getEmployees.html',
-            controller: 'EmployeesController as ec'
-        }).when('/trackEmployee', {
+        })
+        // .when('/', {
+        //     templateUrl: 'views/getEmployees.html',
+        //     controller: 'EmployeesController as ec'
+        // })
+        .when('/trackEmployee', {
             templateUrl: '/views/trackEmployee.html',
             controller: 'TrackEmployeeController as te'
         }).otherwise({ redirectTo: '/'
