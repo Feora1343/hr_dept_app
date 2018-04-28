@@ -1,14 +1,15 @@
-# HR Department
-
-## MEAN Group Activity
-
-You will be making a MEAN Stack App for an HR department. HR has requested that they be able to manage new employees, run reports on the company, and change employee information, including terminate them. HR also wants it to be pretty.
-
-You will need to follow the MVC pattern. Use a custom service or two to make your http calls and store data persistent between different views. You will also be streaching your MongoDB skills. Try to keep your code DRY.
-
-Try your hand with Angular Material!
-
-Plan with your group before you start. Make some goals for yourself -- this project uses all the new things we've learned this week, so this is a great time to self assess!
+## What Are We Building It With?
+```                          
+,___________,         .----------,  _Request_    .---------,         .----------.
+|___________|       ,'________ ,'|   -> | ->   ,'________,'|        ( ~--------~ )
+| HTML 5    |      | AngularJS | |      |      | _______ | |        | ~--------~ |
+| CSS       |      | Angular   | |      |      | Node.js | |        | PostgreSQL |
+| Angular   | <--  |  Material | |      |      | Express | |  <--   | Postico    |        
+|  Material |      |           | ;   <- | <-   | _______ | ;        | ~--------~ |
+|___________|      |___________|'  _Response_  |_________|'         `.__________.'
+    Client          Client Logic                  Server               Database
+           *Front End*                                     *Back End*              
+```
 
 ## Base Mode
 
